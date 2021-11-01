@@ -9,17 +9,17 @@ import Foundation
 
 class SignupFormModelValidator {
     
+//    func isFirstNameValid(firstName: String) -> Bool {
+//        var returnValue =  true
+//        if firstName.isEmpty {
+//            returnValue = false
+//        }
+//        return returnValue
+//    }
+    
     func isFirstNameValid(firstName: String) -> Bool {
         var returnValue =  true
-        if firstName.isEmpty {
-            returnValue = false
-        }
-        return returnValue
-    }
-    
-    func isFirstNameNotShort(firstName: String) -> Bool {
-        var returnValue =  true
-        if firstName.count < 3 {
+        if firstName.count <  2  {
             returnValue = false
         }
         return returnValue
