@@ -17,9 +17,17 @@ class SignupFormModelValidator {
 //        return returnValue
 //    }
     
-    func isFirstNameValid(firstName: String) -> Bool {
-        var returnValue =  true
-        if firstName.count <  2  {
+//    func isFirstNameValid(firstName: String) -> Bool {
+//        var returnValue =  true
+//        if firstName.count <  2  {
+//            returnValue = false
+//        }
+//        return returnValue
+//    }
+    
+    func isFirstNameValid(firstName:String) -> Bool {
+        var returnValue = true
+        if firstName.count <  SignupConstants.firstNameMinLength  || firstName.count > SignupConstants.firstNameMaxLength {
             returnValue = false
         }
         return returnValue
